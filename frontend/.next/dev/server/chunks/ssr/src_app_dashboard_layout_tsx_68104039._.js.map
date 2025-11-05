@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/developer/JobPortal/frontend/src/app/dashboard/layout.tsx"],"sourcesContent":["\"use client\";\n\nimport React from \"react\";\nimport { useSelector } from \"react-redux\";\nimport { RootState } from \"../redux/store\";\n\nexport default function DashboardLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  const user = useSelector((state: RootState) => state.user.user);\n\n  return (\n    <div className=\"min-h-screen bg-gray-50\">\n      {user?.role === \"admin\" ? <AdminNavbar /> : <DashboardNavbar />}\n      <main className=\"p-4\">{children}</main>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAGA;AAHA;;;AAMe,SAAS,gBAAgB,EACtC,QAAQ,EAGT;IACC,MAAM,OAAO,IAAA,wKAAW,EAAC,CAAC,QAAqB,MAAM,IAAI,CAAC,IAAI;IAE9D,qBACE,8OAAC;QAAI,WAAU;;YACZ,MAAM,SAAS,wBAAU,8OAAC;;;;qCAAiB,8OAAC;;;;;0BAC7C,8OAAC;gBAAK,WAAU;0BAAO;;;;;;;;;;;;AAG7B","debugId":null}}]
+}

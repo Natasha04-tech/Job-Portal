@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/developer/JobPortal/frontend/src/app/dashboard/page.tsx"],"sourcesContent":["\"use client\";\n\nimport React from \"react\";\nimport { useSelector } from \"react-redux\";\nimport { RootState } from \"../redux/store\";\n\nexport default function DashboardPage() {\n  const user = useSelector((state: RootState) => state.user.user);\n\n  if (!user) return <div>Loading...</div>;\n\n  return user.role === \"admin\" ? <AdminDashboard /> : <MyJobs />;\n}\n"],"names":[],"mappings":";;;;;AAGA;;;AAHA;;AAMe,SAAS;;IACtB,MAAM,OAAO,IAAA,2KAAW;2CAAC,CAAC,QAAqB,MAAM,IAAI,CAAC,IAAI;;IAE9D,IAAI,CAAC,MAAM,qBAAO,6LAAC;kBAAI;;;;;;IAEvB,OAAO,KAAK,IAAI,KAAK,wBAAU,6LAAC;;;;6BAAoB,6LAAC;;;;;AACvD;GANwB;;QACT,2KAAW;;;KADF","debugId":null}}]
+}

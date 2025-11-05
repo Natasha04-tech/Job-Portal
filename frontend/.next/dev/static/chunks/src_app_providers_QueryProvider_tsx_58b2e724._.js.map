@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/developer/JobPortal/frontend/src/app/providers/QueryProvider.tsx"],"sourcesContent":["\"use client\";\n\nimport React, { useState } from \"react\";\nimport { QueryClient, QueryClientProvider } from \"@tanstack/react-query\";\nimport { ReactQueryDevtools } from \"@tanstack/react-query-devtools\";\n\nexport default function QueryProvider({ children }: { children: React.ReactNode }) {\n\n  const [queryClient] = useState(() => new QueryClient());\n\n  return (\n    <QueryClientProvider client={queryClient}>\n      {children}\n\n      <ReactQueryDevtools initialIsOpen={false}  />\n    </QueryClientProvider>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAAA;AACA;;;AAJA;;;;AAMe,SAAS,cAAc,EAAE,QAAQ,EAAiC;;IAE/E,MAAM,CAAC,YAAY,GAAG,IAAA,yKAAQ;kCAAC,IAAM,IAAI,+LAAW;;IAEpD,qBACE,6LAAC,gNAAmB;QAAC,QAAQ;;YAC1B;0BAED,6LAAC,6MAAkB;gBAAC,eAAe;;;;;;;;;;;;AAGzC;GAXwB;KAAA","debugId":null}}]
+}

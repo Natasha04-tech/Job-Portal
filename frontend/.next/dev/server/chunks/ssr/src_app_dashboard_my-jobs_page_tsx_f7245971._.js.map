@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/developer/JobPortal/frontend/src/app/dashboard/my-jobs/page.tsx"],"sourcesContent":["\"use client\";\n\nimport React, { useState } from \"react\";\nimport JobCard from \"@/app/components/myJob/JobCard\";\nimport MyJob from \"@/app/components/myJob/myJob\";\n\n\n\nexport default function MyJobsPage() {\n \n\n  return (\n    <MyJob/>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;;AAAA;;;AAQe,SAAS;IAGtB,qBACE,8OAAC;;;;;AAEL","debugId":null}}]
+}

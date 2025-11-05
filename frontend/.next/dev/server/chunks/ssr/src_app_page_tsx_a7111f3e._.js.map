@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/developer/JobPortal/frontend/src/app/page.tsx"],"sourcesContent":["\"use client\";\n\nimport React, { useEffect } from \"react\";\nimport { useSelector } from \"react-redux\";\nimport { useRouter } from \"next/navigation\";\n\nimport Login from \"./components/auth/Login\";\nimport { RootState } from \"./redux/store\";\nimport AdminDashboard from \"./components/admin/page\";\n\nexport default function Home() {\n  // const user = useSelector((state: RootState) => state.user.user);\n  // const router = useRouter();\n\n  // useEffect(() => {\n  //   if (user) {\n  //     router.push(\"/dashboard\");\n  //   }\n  // }, [user, router]);\n\n  // return <Login />;\n\n}\n"],"names":[],"mappings":";;;;AAAA;AAUe,SAAS;AACtB,mEAAmE;AACnE,8BAA8B;AAE9B,oBAAoB;AACpB,gBAAgB;AAChB,iCAAiC;AACjC,MAAM;AACN,sBAAsB;AAEtB,oBAAoB;AAEtB","debugId":null}}]
+}
