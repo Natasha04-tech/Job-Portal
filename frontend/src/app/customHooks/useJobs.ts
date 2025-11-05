@@ -5,6 +5,7 @@ import { createJob, deleteJob, fetchJobById, fetchJobs, fetchJobsforAdmin, updat
 import axios from "axios";
 import { JobWithApplications } from "../utility/props";
 import axiosInstance from "../lib/axiosInstance";
+import toast from "react-hot-toast";
 
 
 
@@ -37,6 +38,7 @@ export const useCreateJob = () => {
     mutationFn: createJob,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["jobs"] });
+      toast.success("Job Created Successfully")
     },
   });
 };
@@ -47,6 +49,7 @@ export const useUpdateJob = () => {
     mutationFn: updateJob,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["jobs"] });
+      toast.success("Job Updated Successfully")
     },
   });
 };
@@ -57,6 +60,7 @@ export const useDeleteJob = () => {
     mutationFn: deleteJob,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["jobs"] });
+      toast.success("Job Deleted Successfully")
     },
   });
 };

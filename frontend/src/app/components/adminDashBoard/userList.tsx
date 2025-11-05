@@ -270,7 +270,7 @@ export default function UsersList() {
                 onClick={handleSaveUser}
                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
               >
-                Save
+               {isLoading ? "saving" :"save"} 
               </button>
             </div>
           </div>

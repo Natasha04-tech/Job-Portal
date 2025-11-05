@@ -100,7 +100,6 @@ export default function AddUserModal({ onClose }: AddUserModalProps) {
             required
           />
 
-          {/* Add Skills Section */}
           <div className="flex items-center gap-2">
             <input
               type="text"
@@ -118,7 +117,7 @@ export default function AddUserModal({ onClose }: AddUserModalProps) {
             </button>
           </div>
 
-          {/* Show Added Skills */}
+
           <div className="flex flex-wrap gap-2">
             {formData.skills.map((skill, i) => (
               <span

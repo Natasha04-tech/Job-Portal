@@ -1240,7 +1240,6 @@ function ApplicationTable({ title, applications }) {
     };
     const handleFeedbackSubmit = ()=>{
         if (!feedbackModal.appId) return;
-        // Optimistic update
         queryClient.setQueryData([
             "userApplications"
         ], (oldData)=>{
@@ -1352,23 +1351,19 @@ function ApplicationTable({ title, applications }) {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                             className: "p-3",
-                                            children: [
-                                                app.userId.firstName,
-                                                " ",
-                                                app.userId.lastName
-                                            ]
-                                        }, void 0, true, {
+                                            children: app.userId ? `${app.userId.firstName} ${app.userId.lastName}` : "Unknown User"
+                                        }, void 0, false, {
                                             fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                             lineNumber: 101,
-                                            columnNumber: 19
+                                            columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                             className: "p-3",
-                                            children: app.userId.email
+                                            children: app.userId?.email ?? "N/A"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                             lineNumber: 104,
-                                            columnNumber: 19
+                                            columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                             className: "p-3 capitalize",
@@ -1378,12 +1373,12 @@ function ApplicationTable({ title, applications }) {
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                                 lineNumber: 106,
-                                                columnNumber: 21
+                                                columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                             lineNumber: 105,
-                                            columnNumber: 19
+                                            columnNumber: 7
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                             className: "p-3",
@@ -1398,7 +1393,7 @@ function ApplicationTable({ title, applications }) {
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                                         lineNumber: 136,
-                                                        columnNumber: 23
+                                                        columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                         value: "1st_round",
@@ -1406,7 +1401,7 @@ function ApplicationTable({ title, applications }) {
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                                         lineNumber: 137,
-                                                        columnNumber: 23
+                                                        columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                         value: "2nd_round",
@@ -1414,7 +1409,7 @@ function ApplicationTable({ title, applications }) {
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                                         lineNumber: 138,
-                                                        columnNumber: 23
+                                                        columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                         value: "selected",
@@ -1422,7 +1417,7 @@ function ApplicationTable({ title, applications }) {
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                                         lineNumber: 139,
-                                                        columnNumber: 23
+                                                        columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                         value: "rejected",
@@ -1430,29 +1425,29 @@ function ApplicationTable({ title, applications }) {
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                                         lineNumber: 140,
-                                                        columnNumber: 23
+                                                        columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                                 lineNumber: 121,
-                                                columnNumber: 21
+                                                columnNumber: 9
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                             lineNumber: 120,
-                                            columnNumber: 19
+                                            columnNumber: 7
                                         }, this)
                                     ]
                                 }, app._id, true, {
                                     fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                                     lineNumber: 100,
-                                    columnNumber: 17
+                                    columnNumber: 5
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
                             lineNumber: 98,
-                            columnNumber: 13
+                            columnNumber: 12
                         }, this)
                     ]
                 }, void 0, true, {
@@ -1469,7 +1464,7 @@ function ApplicationTable({ title, applications }) {
                 children: "No applications yet."
             }, void 0, false, {
                 fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                lineNumber: 149,
+                lineNumber: 150,
                 columnNumber: 9
             }, this),
             feedbackModal.open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1482,7 +1477,7 @@ function ApplicationTable({ title, applications }) {
                             children: "Provide Rejection Feedback"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                            lineNumber: 156,
+                            lineNumber: 157,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -1493,7 +1488,7 @@ function ApplicationTable({ title, applications }) {
                             className: "w-full border rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-400"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                            lineNumber: 157,
+                            lineNumber: 158,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1508,7 +1503,7 @@ function ApplicationTable({ title, applications }) {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                    lineNumber: 165,
+                                    lineNumber: 166,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1517,24 +1512,24 @@ function ApplicationTable({ title, applications }) {
                                     children: "Submit"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                    lineNumber: 171,
+                                    lineNumber: 172,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                            lineNumber: 164,
+                            lineNumber: 165,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                    lineNumber: 155,
+                    lineNumber: 156,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                lineNumber: 154,
+                lineNumber: 155,
                 columnNumber: 9
             }, this)
         ]

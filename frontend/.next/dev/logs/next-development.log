@@ -403,3 +403,968 @@ https://nextjs.org/docs/messages/module-not-found
 [00:14:23.348] Browser LOG     hello confirmPassword 
 [00:14:23.348] Browser LOG     hello skills[] nextjs
 [00:14:23.348] Browser LOG     hello resume {}
+[00:19:00.090] Browser WARN    Unauthorized - redirect to login maybe?
+[00:23:19.091] Browser WARN    Unauthorized - redirect to login maybe?
+[00:23:33.090] Browser WARN    Unauthorized - redirect to login maybe?
+[00:26:58.090] Browser WARN    Unauthorized - redirect to login maybe?
+[00:42:57.867] Browser WARN    Unauthorized - redirect to login maybe?
+[00:44:50.058] Server  LOG      ✓ Compiled in 31ms
+[00:46:43.395] Browser WARN    Unauthorized - redirect to login maybe?
+[00:46:52.090] Browser WARN    Unauthorized - redirect to login maybe?
+[00:46:59.090] Browser WARN    Unauthorized - redirect to login maybe?
+[00:47:42.091] Browser WARN    Unauthorized - redirect to login maybe?
+[00:48:36.726] Browser WARN    Unauthorized - redirect to login maybe?
+[00:51:44.456] Server  LOG      ✓ Compiled in 76ms
+[00:51:44.563] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:122:4
+Parsing ecmascript source code failed
+  120 |       {selectedJob && (
+  121 |         
+> 122 |   );
+      |    ^
+  123 | }
+  124 |
+
+Expected '</', got ';'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:51:50.377] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:52:27.664] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:52:29.411] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:52:33.590] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:52:40.043] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:52:43.452] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:52:46.061] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:52:51.071] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:52:52.565] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:52:54.269] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:52:55.301] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:52:57.662] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:53:06.908] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:53:08.440] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:53:13.216] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:53:38.634] Server  LOG      ✓ Compiled in 36ms
+[00:55:22.877] Server  LOG      ✓ Compiled in 27ms
+[00:55:23.093] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+Parsing ecmascript source code failed
+  119 |       {/* Applicants Modal */}
+  120 |       {selectedJob && 
+> 121 | }
+      | ^
+  122 |
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:55:25.844] Server  LOG      ✓ Compiled in 23ms
+[00:55:26.090] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:122:1
+Parsing ecmascript source code failed
+  120 |       {selectedJob &&  <ApplicantsModal job={selectedJob} onClose={() => setSelectedJob(null)} />
+  121 | }
+> 122 |
+      | ^
+
+Expected '</', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:55:44.090] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:123:1
+Parsing ecmascript source code failed
+  121 |   <ApplicantsModal job={selectedJob} onClose={() => setSelectedJob(null)} />
+  122 | )}
+> 123 |
+      | ^
+
+Expected '</', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:55:48.090] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:123:1
+Parsing ecmascript source code failed
+  121 |   <ApplicantsModa job={selectedJob} onClose={() => setSelectedJob(null)} />
+  122 | )}
+> 123 |
+      | ^
+
+Expected '</', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:55:49.091] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:123:1
+Parsing ecmascript source code failed
+  121 |   <ApplicantsModal job={selectedJob} onClose={() => setSelectedJob(null)} />
+  122 | )}
+> 123 |
+      | ^
+
+Expected '</', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:55:51.090] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:124:1
+Parsing ecmascript source code failed
+  122 |   <ApplicantsModal job={selectedJob} onClose={() => setSelectedJob(null)} />
+  123 | )}
+> 124 |
+      | ^
+
+Expected '</', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:56:20.452] Server  LOG      ✓ Compiled in 30ms
+[00:56:37.327] Server  LOG      ✓ Compiled in 49ms
+[00:56:38.091] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:155:5
+Parsing ecmascript source code failed
+  153 |       )}
+  154 |       {selectedJob && (
+> 155 |     </div>
+      |     ^
+  156 |   );
+  157 | }
+  158 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:56:38.091] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:153:8
+Parsing ecmascript source code failed
+  151 |           </div>
+  152 |         </div>
+> 153 |       )}
+      |        ^
+  154 |       {selectedJob && (
+  155 |     </div>
+  156 |   );
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:56:38.091] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:155:6
+Parsing ecmascript source code failed
+  153 |       )}
+  154 |       {selectedJob && (
+> 155 |     </div>
+      |      ^^^^^
+  156 |   );
+  157 | }
+  158 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:56:39.368] Server  LOG      ✓ Compiled in 38ms
+[00:56:50.812] Server  LOG      ✓ Compiled in 49ms
+[00:56:56.606] Server  LOG      ✓ Compiled in 69ms
+[00:57:09.229] Browser WARN    Unauthorized - redirect to login maybe?
+[00:57:29.027] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'firstName')
+[01:00:56.230] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:00:56.380] Server  LOG      ✓ Compiled in 28ms
+[01:00:56.879] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:59.895] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:05:18.318] Server  LOG      ✓ Compiled in 58ms
+[01:05:55.486] Server  LOG      ✓ Compiled in 34ms
+[01:06:00.636] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'firstName')
+[01:06:45.439] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:06:45.574] Server  LOG      ✓ Compiled in 33ms
+[01:06:46.040] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:46.295] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:06:57.563] Server  LOG      ✓ Compiled in 47ms
+[01:07:03.662] Server  LOG      ✓ Compiled in 46ms
+[01:22:07.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:07.810] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:26:11.955] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:12.201] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:29:10.620] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:10.795] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:31:20.945] Server  LOG      ✓ Compiled in 24ms
+[01:31:23.349] Server  LOG      ✓ Compiled in 41ms
+[01:31:30.995] Server  LOG      ✓ Compiled in 68ms
+[01:31:34.253] Server  LOG      ✓ Compiled in 34ms
+[01:31:42.850] Server  LOG      ✓ Compiled in 24ms
+[01:31:45.298] Server  LOG      ✓ Compiled in 33ms
+[01:32:04.420] Server  LOG      ✓ Compiled in 26ms
+[01:32:07.513] Server  LOG      ✓ Compiled in 24ms
+[01:32:11.376] Server  LOG      ✓ Compiled in 25ms
+[01:34:02.102] Server  LOG      ✓ Compiled in 26ms
+[01:34:04.136] Server  LOG      ✓ Compiled in 33ms
+[01:34:08.006] Server  LOG      ✓ Compiled in 39ms
+[01:34:23.088] Server  LOG      ✓ Compiled in 26ms
+[01:34:27.159] Server  LOG      ✓ Compiled in 45ms
+[01:34:29.213] Server  LOG      ✓ Compiled in 29ms
+[01:34:38.428] Server  LOG      ✓ Compiled in 22ms
+[01:37:50.741] Server  LOG      ✓ Compiled in 27ms
+[01:37:52.277] Server  LOG      ✓ Compiled in 39ms
+[01:38:08.882] Server  LOG      ✓ Compiled in 29ms
+[01:38:18.343] Server  LOG      ✓ Compiled in 33ms
+[01:38:21.440] Server  LOG      ✓ Compiled in 28ms
+[01:38:29.177] Server  LOG      ✓ Compiled in 58ms
+[01:38:30.092] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:269:26
+Parsing ecmascript source code failed
+  267 |                 Cancel
+  268 |               </button>
+> 269 |              {isLoading ?) <button
+      |                          ^
+  270 |                 onClick={handleSaveUser}
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+
+Expected '</', got ')'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:38:37.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:269:25
+Parsing ecmascript source code failed
+  267 |                 Cancel
+  268 |               </button>
+> 269 |              {isLoading ) <button
+      |                         ^
+  270 |                 onClick={handleSaveUser}
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+
+Expected '</', got ')'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:38:49.936] Server  LOG      ✓ Compiled in 58ms
+[01:38:52.761] Server  LOG      ✓ Compiled in 29ms
+[01:38:53.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:28
+Parsing ecmascript source code failed
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+> 273 |                {isLoading ?} Save
+      |                            ^
+  274 |               </button>
+  275 |             </div>
+  276 |           </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:38:56.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:28
+Parsing ecmascript source code failed
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+> 273 |                {isLoading ?} 
+      |                            ^
+  274 |               </button>
+  275 |             </div>
+  276 |           </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:00.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:31
+Parsing ecmascript source code failed
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+> 273 |                {isLoading ? sa} 
+      |                               ^
+  274 |               </button>
+  275 |             </div>
+  276 |           </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:03.092] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:35
+Parsing ecmascript source code failed
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+> 273 |                {isLoading ? saving} 
+      |                                   ^
+  274 |               </button>
+  275 |             </div>
+  276 |           </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:05.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:37
+Parsing ecmascript source code failed
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+> 273 |                {isLoading ? saving :} 
+      |                                     ^
+  274 |               </button>
+  275 |             </div>
+  276 |           </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:08.247] Server  LOG      ✓ Compiled in 76ms
+[01:39:19.964] Server  LOG      ✓ Compiled in 28ms
+[01:39:20.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:42
+Parsing ecmascript source code failed
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+> 273 |                {isLoading ? (saving :save} 
+      |                                          ^
+  274 |               </button>
+  275 |             </div>
+  276 |           </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:23.093] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:43
+Parsing ecmascript source code failed
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+> 273 |                {isLoading ? (saving :save)} 
+      |                                           ^
+  274 |               </button>
+  275 |             </div>
+  276 |           </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:02.090] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:41
+Parsing ecmascript source code failed
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+> 273 |                {isLoading ? saving :save)} 
+      |                                         ^
+  274 |               </button>
+  275 |             </div>
+  276 |           </div>
+
+Expected '</', got ')'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:07.090] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:41
+Parsing ecmascript source code failed
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+> 273 |                {isLoading ? saving :save"} 
+      |                                         ^^^
+  274 |               </button>
+  275 |             </div>
+  276 |           </div>
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:14.085] Server  LOG      ✓ Compiled in 31ms
+[01:40:15.090] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:35
+Parsing ecmascript source code failed
+  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
+  272 |               >
+> 273 |                {isLoading ? saving" :"save"} 
+      |                                   ^^^^
+  274 |               </button>
+  275 |             </div>
+  276 |           </div>
+
+Expected '</', got 'string literal ( :, " :")'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:37.678] Browser WARN    Unauthorized - redirect to login maybe?
+[01:41:03.696] Server  LOG      ✓ Compiled in 43ms
+[01:41:08.168] Server  LOG      ✓ Compiled in 24ms
+[01:41:16.473] Server  LOG      ✓ Compiled in 30ms
+[01:41:21.178] Server  LOG      ✓ Compiled in 22ms
+[01:41:23.382] Server  LOG      ✓ Compiled in 25ms
+[01:41:25.546] Server  LOG      ✓ Compiled in 29ms
+[01:41:29.221] Server  LOG      ✓ Compiled in 64ms
+[01:41:33.765] Server  LOG      ✓ Compiled in 24ms
+[01:44:23.570] Server  LOG      ✓ Compiled in 29ms
+[01:44:30.692] Server  LOG      ✓ Compiled in 34ms
+[01:44:30.794] Browser ERROR   ./src/app/customHooks/useJobs.ts:42:5
+Parsing ecmascript source code failed
+  40 |       queryClient.invalidateQueries({ queryKey: ["jobs"] });
+  41 |       toast,
+> 42 |     },
+     |     ^
+  43 |   });
+  44 | };
+  45 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/customHooks/useJobs.ts [Client Component Browser]
+    ./src/app/components/jobs/JobPage.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/customHooks/useJobs.ts [Client Component SSR]
+    ./src/app/components/jobs/JobPage.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:44:40.001] Server  LOG      ✓ Compiled in 55ms
+[01:44:44.305] Server  LOG      ✓ Compiled in 24ms
+[01:45:03.378] Server  LOG      ✓ Compiled in 34ms
+[01:45:07.106] Server  LOG      ✓ Compiled in 32ms
+[01:45:12.575] Server  LOG      ✓ Compiled in 22ms
+[01:45:21.964] Server  LOG      ✓ Compiled in 26ms
+[01:45:35.062] Server  LOG      ✓ Compiled in 62ms
+[01:45:38.158] Server  LOG      ✓ Compiled in 39ms
+[01:45:39.174] Server  LOG      ✓ Compiled in 36ms
+[01:45:51.001] Server  LOG      ✓ Compiled in 25ms
+[01:45:55.316] Server  LOG      ✓ Compiled in 28ms
+[01:46:05.446] Server  LOG      ✓ Compiled in 27ms
+[01:46:10.494] Server  LOG      ✓ Compiled in 28ms
+[01:46:17.173] Server  LOG      ✓ Compiled in 31ms
+[01:46:22.010] Server  LOG      ✓ Compiled in 29ms
+[01:46:23.628] Server  LOG      ✓ Compiled in 28ms
+[01:46:25.083] Server  LOG      ✓ Compiled in 25ms
+[01:46:31.322] Server  LOG      ✓ Compiled in 28ms
+[01:52:32.213] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:52:32.441] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:55:58.731] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:55:58.962] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

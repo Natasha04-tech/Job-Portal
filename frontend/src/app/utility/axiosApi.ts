@@ -71,6 +71,7 @@ export const addUser = async (data: {
   };
 
   const res = await axiosInstance.post("/users/add", payload);
+  
   return res.data;
 };
 

@@ -8,6 +8,7 @@ import {
   deleteUser,
   addUser,
 } from "../utility/axiosApi";
+import toast from "react-hot-toast";
 
 export const useUsers = () =>
   useQuery({
@@ -28,6 +29,7 @@ export const useUpdateUser = () => {
     mutationFn: ({ id, data }: { id: string; data: any }) => updateUser(id, data),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["users"] });
+      toast.success("User Updated Successfully");
     },
   });
 };
@@ -38,6 +40,7 @@ export const useDeleteUser = () => {
     mutationFn: deleteUser,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["users"] });
+      toast.success("User Delete Successfully")
     },
   });
 };
@@ -56,6 +59,7 @@ export const useAddUser = () => {
 
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["users"] });
+      toast.success('User Added Successfully');
     },
   });
 };

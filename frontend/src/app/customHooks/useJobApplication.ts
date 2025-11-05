@@ -4,6 +4,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import axiosInstance from "@/app/lib/axiosInstance";
 import { JobApplication, UpdateStatusPayload } from "../utility/props";
 import { applyForJob, fetchUserApplications } from "../utility/axiosApi";
+import toast from "react-hot-toast";
 
 
 const updateApplicationStatus = async ({
@@ -32,6 +33,7 @@ export const useApplyJob = () => {
     mutationFn: applyForJob,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["userApplications"] });
+      toast.success("Applied Successfully")
     },
   });
 };
@@ -43,6 +45,7 @@ export const useUpdateApplicationStatus = () => {
     mutationFn: updateApplicationStatus,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["userApplications"] });
+      toast.success("Application Updated Successfully")
     },
   });
 };
