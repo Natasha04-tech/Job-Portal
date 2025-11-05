@@ -85,28 +85,37 @@ export const fetchUserById = async (id: string): Promise<UserI> => {
   const res = await axiosInstance.get(`/users/${id}`);
   return res.data;
 };
-
 export const updateUser = async (id: string, data: any) => {
   let payload = data;
   let headers = {};
 
-  // If resume file exists, send FormData
-  if (data.resume instanceof File) {
+  // Check if resume is a File instance
+  if (data.resume && data.resume instanceof File) {
     const formData = new FormData();
-    Object.entries(data).forEach(([key, value]) => {
-      if (key === "skills" && Array.isArray(value)) {
-        value.forEach((skill) => formData.append("skills[]", skill));
-      } else {
-        formData.append(key, value as any);
-      }
-    });
+
+ Object.entries(data).forEach(([key, value]) => {
+  if (key === "skills" && Array.isArray(value)) {
+    value.forEach((skill) => formData.append("skills[]", skill));
+  } else if (key === "resume" && value instanceof File) {
+    formData.append("resume", value); // file
+  } else {
+    formData.append(key, value as string); // cast to string
+  }
+});
+
     payload = formData;
+ 
     headers = { "Content-Type": "multipart/form-data" };
+
+    for (const pair of payload.entries()) {
+      console.log("hello",pair[0],pair[1]);
+    }
   }
 
   const res = await axiosInstance.put(`/users/update/${id}`, payload, { headers });
   return res.data;
 };
+
 
 export const deleteUser = async (id: string) => {
   const res = await axiosInstance.delete(`/users/delete/${id}`);

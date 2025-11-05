@@ -9,6 +9,7 @@ import AdminNavbar from "./components/adminDashBoard/adminNavbar";
 import DashboardNavbar from "./components/userDashbaord/DashboardNavbar";
 import { useSelector } from "react-redux";
 import { RootState } from "./redux/store";
+import { Toaster } from "react-hot-toast";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Provider store={store}>
             <AuthInitializer />
             <LayoutContent>{children}</LayoutContent>
+             <Toaster position="top-right" reverseOrder={false} />
           </Provider>
         </QueryClientProvider>
       </body>

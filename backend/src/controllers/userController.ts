@@ -69,13 +69,14 @@ export const updateUser = async (req: AuthRequest, res: Response) => {
   try {
     const { id } = req.params;
     const updatedFields: Record<string, any> = { ...req.body };
-
+    
     if (req.body?.password) {
       updatedFields.password = await bcrypt.hash(req.body.password, 10);
     }
 
     if (req.file?.buffer) {
       const result = await uploadPDFToCloudinary(req.file.buffer, "resumes");
+      console.log("result is",result)
       updatedFields.resume = result.url;
       updatedFields.resumePublicId = result.public_id;
     }

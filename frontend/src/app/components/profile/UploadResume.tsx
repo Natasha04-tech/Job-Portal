@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { FileText, UploadCloud, Eye } from "lucide-react";
+import { FileText, UploadCloud } from "lucide-react";
 import { ProfileData } from "@/app/utility/props";
 
 interface Props {
@@ -25,9 +25,9 @@ export default function ResumeUpload({ profile, onFileChange }: Props) {
     <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 shadow-sm">
       <h2 className="text-xl font-semibold text-gray-800 mb-4">Resume</h2>
 
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between bg-white border border-gray-300 rounded-xl p-5 shadow-sm gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between bg-white border border-gray-300 rounded-xl p-5 shadow-sm gap-4">
         {/* Resume Info */}
-        <div className="flex items-center gap-3">
+        <div className="flex-1 flex items-center gap-3">
           <FileText size={24} className="text-blue-600" />
           <div>
             <p className="text-gray-700 font-medium">
@@ -37,36 +37,20 @@ export default function ResumeUpload({ profile, onFileChange }: Props) {
                 ? "Resume ready to upload"
                 : "No resume uploaded yet"}
             </p>
-            {isStringResume && (
+            {(isStringResume || isFileResume) && (
               <p className="text-sm text-gray-500 truncate max-w-xs">
-                {resume.split("/").pop()}
-              </p>
-            )}
-            {isFileResume && (
-              <p className="text-sm text-gray-500 truncate max-w-xs">
-                {resume.name}
+                {isStringResume ? resume.split("/").pop() : (resume as File).name}
               </p>
             )}
           </div>
         </div>
 
-        {/* Actions */}
-        <div className="flex items-center gap-3">
-          {isStringResume && (
-            <a
-              href={resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all font-medium shadow-sm"
-            >
-              <Eye size={18} />
-              View Resume
-            </a>
-          )}
+        {/* Upload Button */}
+        <div className="flex-shrink-0">
           <button
             type="button"
             onClick={() => fileRef.current?.click()}
-            className="flex items-center gap-2 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition-all font-medium shadow-sm"
+            className="flex items-center justify-center gap-2 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition-all font-medium shadow-sm w-full sm:w-auto"
           >
             <UploadCloud size={18} />
             {resume ? "Replace" : "Upload"}

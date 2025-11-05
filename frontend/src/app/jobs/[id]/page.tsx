@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { useApplyJob, useUserApplications } from "@/app/customHooks/useJobApplication";
 import { useJob } from "@/app/customHooks/useJobs";
+import toast from "react-hot-toast";
 
 export default function JobDetailsPage() {
   const { id } = useParams();
@@ -32,7 +33,7 @@ export default function JobDetailsPage() {
 
   const handleApply = async () => {
     await applyJobMutation.mutateAsync(job._id);
-    alert("Application submitted successfully!");
+    toast.success("Application submitted successfully!");
   };
 
   return (

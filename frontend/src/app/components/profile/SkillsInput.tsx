@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { ProfileData } from "@/app/utility/props";
 import { Plus, X } from "lucide-react";
@@ -18,17 +20,14 @@ export default function SkillsInput({ profile, setProfile }: Props) {
   };
 
   const removeSkill = (skill: string) => {
-    setProfile({
-      ...profile,
-      skills: profile.skills.filter((s) => s !== skill),
-    });
+    setProfile({ ...profile, skills: profile.skills.filter((s) => s !== skill) });
   };
 
   return (
-    <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 shadow-sm">
-      <h2 className="text-xl font-semibold text-gray-800 mb-4">Skills</h2>
+    <div className="bg-gray-50 p-6 md:p-8 rounded-2xl border border-gray-200 shadow-sm">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-6">Skills</h2>
 
-      <div className="flex gap-3 mb-5">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-5">
         <input
           type="text"
           placeholder="Enter a skill"
@@ -46,17 +45,11 @@ export default function SkillsInput({ profile, setProfile }: Props) {
       </div>
 
       <div className="flex flex-wrap gap-3">
-        {profile.skills.length > 0 ? (
+        {profile.skills.length ? (
           profile.skills.map((skill, idx) => (
-            <div
-              key={idx}
-              className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full flex items-center gap-2 shadow-sm"
-            >
+            <div key={idx} className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full flex items-center gap-2 shadow-sm">
               <span className="font-medium">{skill}</span>
-              <button
-                onClick={() => removeSkill(skill)}
-                className="text-red-500 hover:text-red-700"
-              >
+              <button onClick={() => removeSkill(skill)} className="text-red-500 hover:text-red-700">
                 <X size={16} />
               </button>
             </div>

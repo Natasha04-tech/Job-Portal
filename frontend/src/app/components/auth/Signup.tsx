@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useSignup } from "@/app/customHooks/useApi";
 import { Eye, EyeOff, Loader2 } from "lucide-react";
 import AuthLayout from "./AuthLayout";
+import toast from "react-hot-toast";
 
 export default function Signup() {
   const [form, setForm] = useState({
@@ -24,7 +25,7 @@ export default function Signup() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (form.password !== form.confirmPassword) {
-      alert("Passwords do not match");
+      toast.error("Passwords do not match");
       return;
     }
 
