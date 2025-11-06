@@ -15,8 +15,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$lib$2f$axiosInstance$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/lib/axiosInstance.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$utility$2f$axiosApi$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/utility/axiosApi.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hot-toast/dist/index.mjs [app-client] (ecmascript)");
 var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -53,6 +55,7 @@ const useApplyJob = ()=>{
                         "userApplications"
                     ]
                 });
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success("Applied Successfully");
             }
         }["useApplyJob.useMutation"]
     });
@@ -75,6 +78,7 @@ const useUpdateApplicationStatus = ()=>{
                         "userApplications"
                     ]
                 });
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success("Application Updated Successfully");
             }
         }["useUpdateApplicationStatus.useMutation"]
     });
@@ -111,8 +115,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$utility$2f$axiosApi$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/utility/axiosApi.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$lib$2f$axiosInstance$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/lib/axiosInstance.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hot-toast/dist/index.mjs [app-client] (ecmascript)");
 var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature(), _s3 = __turbopack_context__.k.signature(), _s4 = __turbopack_context__.k.signature(), _s5 = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -179,6 +185,7 @@ const useCreateJob = ()=>{
                         "jobs"
                     ]
                 });
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success("Job Created Successfully");
             }
         }["useCreateJob.useMutation"]
     });
@@ -201,6 +208,7 @@ const useUpdateJob = ()=>{
                         "jobs"
                     ]
                 });
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success("Job Updated Successfully");
             }
         }["useUpdateJob.useMutation"]
     });
@@ -223,6 +231,7 @@ const useDeleteJob = ()=>{
                         "jobs"
                     ]
                 });
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success("Job Deleted Successfully");
             }
         }["useDeleteJob.useMutation"]
     });
@@ -246,6 +255,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hot-toast/dist/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/briefcase.js [app-client] (ecmascript) <export default as Briefcase>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$indian$2d$rupee$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IndianRupee$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/indian-rupee.js [app-client] (ecmascript) <export default as IndianRupee>");
@@ -254,6 +264,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useJobApplication$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/customHooks/useJobApplication.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useJobs$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/customHooks/useJobs.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useApi$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/customHooks/useApi.tsx [app-client] (ecmascript)"); // hook to get current logged-in user
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -261,24 +272,38 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
+;
 function JobDetailsPage() {
     _s();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const { id } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useParams"])();
     const { data: job, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useJobs$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useJob"])(id);
     const { data: userApplications = [] } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useJobApplication$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUserApplications"])();
+    const { data: currentUser } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useApi$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useGetMe"])(); // current user
     const applyJobMutation = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useJobApplication$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useApplyJob"])();
     if (isLoading || !job) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "text-center py-20 text-gray-500",
         children: "Loading job details..."
     }, void 0, false, {
         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-        lineNumber: 26,
+        lineNumber: 29,
         columnNumber: 7
     }, this);
     const hasApplied = userApplications.some((app)=>app.jobId?._id?.toString() === job._id.toString());
     const handleApply = async ()=>{
-        await applyJobMutation.mutateAsync(job._id);
-        alert("Application submitted successfully!");
+        // ✅ Check if resume exists
+        if (!currentUser?.resume) {
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error("Please upload your resume before applying!");
+            return;
+        }
+        try {
+            await applyJobMutation.mutateAsync(job._id);
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success("Application submitted successfully!");
+        } catch (err) {
+            console.error(err);
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error(err.response?.data?.message || "Failed to apply for job");
+        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-gray-50",
@@ -290,7 +315,7 @@ function JobDetailsPage() {
                         className: "absolute inset-0 bg-black/25"
                     }, void 0, false, {
                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                        lineNumber: 41,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -301,7 +326,7 @@ function JobDetailsPage() {
                                 children: job.title
                             }, void 0, false, {
                                 fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                lineNumber: 43,
+                                lineNumber: 59,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -311,7 +336,7 @@ function JobDetailsPage() {
                                         size: 18
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                        lineNumber: 45,
+                                        lineNumber: 61,
                                         columnNumber: 13
                                     }, this),
                                     " ",
@@ -319,19 +344,19 @@ function JobDetailsPage() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                lineNumber: 44,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                        lineNumber: 42,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                lineNumber: 40,
+                lineNumber: 56,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -348,7 +373,7 @@ function JobDetailsPage() {
                                         size: 16
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                        lineNumber: 53,
+                                        lineNumber: 70,
                                         columnNumber: 13
                                     }, this),
                                     " ",
@@ -356,7 +381,7 @@ function JobDetailsPage() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                lineNumber: 52,
+                                lineNumber: 69,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -367,7 +392,7 @@ function JobDetailsPage() {
                                         size: 16
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 73,
                                         columnNumber: 13
                                     }, this),
                                     " ",
@@ -375,7 +400,7 @@ function JobDetailsPage() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                lineNumber: 55,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -386,7 +411,7 @@ function JobDetailsPage() {
                                         size: 16
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                        lineNumber: 59,
+                                        lineNumber: 76,
                                         columnNumber: 13
                                     }, this),
                                     " ",
@@ -394,13 +419,13 @@ function JobDetailsPage() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                lineNumber: 58,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                        lineNumber: 51,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -411,14 +436,14 @@ function JobDetailsPage() {
                                 className: "text-yellow-500"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                lineNumber: 64,
+                                lineNumber: 81,
                                 columnNumber: 11
                             }, this),
                             " Job Description"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                        lineNumber: 63,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -426,7 +451,7 @@ function JobDetailsPage() {
                         children: job.description
                     }, void 0, false, {
                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                        lineNumber: 66,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -434,7 +459,7 @@ function JobDetailsPage() {
                         children: "Key Skills"
                     }, void 0, false, {
                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                        lineNumber: 68,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -444,12 +469,12 @@ function JobDetailsPage() {
                                 children: skill
                             }, i, false, {
                                 fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                lineNumber: 71,
+                                lineNumber: 88,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                        lineNumber: 69,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -462,7 +487,7 @@ function JobDetailsPage() {
                                         size: 16
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                        lineNumber: 82,
+                                        lineNumber: 100,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -472,13 +497,13 @@ function JobDetailsPage() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 101,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                lineNumber: 81,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -488,33 +513,35 @@ function JobDetailsPage() {
                                 children: hasApplied ? "Applied" : "Apply Now"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                                lineNumber: 86,
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                        lineNumber: 80,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/jobs/[id]/page.tsx",
-                lineNumber: 50,
+                lineNumber: 67,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/jobs/[id]/page.tsx",
-        lineNumber: 39,
+        lineNumber: 54,
         columnNumber: 5
     }, this);
 }
-_s(JobDetailsPage, "DRL8BNAELCsjgRCan9NcL640lOc=", false, function() {
+_s(JobDetailsPage, "kzUqHTlqB+a1k3ljKa16JbIm9sc=", false, function() {
     return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useParams"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useJobs$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useJob"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useJobApplication$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUserApplications"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useApi$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useGetMe"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useJobApplication$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useApplyJob"]
     ];
 });

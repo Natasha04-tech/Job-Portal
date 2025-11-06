@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { useParams } from "next/navigation";
-import Image from "next/image";
+import { useParams, useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 import {
   MapPin,
@@ -14,12 +14,14 @@ import {
 } from "lucide-react";
 import { useApplyJob, useUserApplications } from "@/app/customHooks/useJobApplication";
 import { useJob } from "@/app/customHooks/useJobs";
-import toast from "react-hot-toast";
+import { useGetMe } from "@/app/customHooks/useApi"; // hook to get current logged-in user
 
 export default function JobDetailsPage() {
+  const router = useRouter();
   const { id } = useParams();
   const { data: job, isLoading } = useJob(id as string);
   const { data: userApplications = [] } = useUserApplications();
+  const { data: currentUser } = useGetMe(); // current user
   const applyJobMutation = useApplyJob();
 
   if (isLoading || !job)
@@ -32,12 +34,25 @@ export default function JobDetailsPage() {
   );
 
   const handleApply = async () => {
-    await applyJobMutation.mutateAsync(job._id);
-    toast.success("Application submitted successfully!");
+    // ✅ Check if resume exists
+    if (!currentUser?.resume) {
+      toast.error("Please upload your resume before applying!");
+     
+      return;
+    }
+
+    try {
+      await applyJobMutation.mutateAsync(job._id);
+      toast.success("Application submitted successfully!");
+    } catch (err: any) {
+      console.error(err);
+      toast.error(err.response?.data?.message || "Failed to apply for job");
+    }
   };
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Job Header */}
       <div className="relative h-72 w-full bg-gradient-to-r from-blue-700 to-blue-500 flex items-center justify-center">
         <div className="absolute inset-0 bg-black/25" />
         <div className="relative z-10 text-center text-white">
@@ -48,6 +63,7 @@ export default function JobDetailsPage() {
         </div>
       </div>
 
+      {/* Job Details */}
       <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-2xl -mt-16 relative z-20 p-8">
         <div className="grid sm:grid-cols-3 gap-6 text-gray-700 text-sm mb-6 border-b pb-4">
           <div className="flex items-center gap-2">
@@ -78,6 +94,7 @@ export default function JobDetailsPage() {
           ))}
         </div>
 
+        {/* Apply Section */}
         <div className="flex items-center justify-between mt-6">
           <div className="flex items-center gap-2 text-gray-600 text-sm">
             <Users size={16} />

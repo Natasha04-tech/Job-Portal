@@ -18,19 +18,20 @@ function LayoutContent({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Conditionally render navbar */}
       {user?.role === "admin" ? <AdminNavbar /> : <DashboardNavbar />}
 
-      {/* Main content grows to fill space */}
       <main className="flex-grow">{children}</main>
 
-      {/* Footer stays at the bottom */}
       <Footer />
     </div>
   );
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>
@@ -38,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Provider store={store}>
             <AuthInitializer />
             <LayoutContent>{children}</LayoutContent>
-             <Toaster position="top-right" reverseOrder={false} />
+            <Toaster position="top-right" reverseOrder={false} />
           </Provider>
         </QueryClientProvider>
       </body>

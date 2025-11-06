@@ -150,6 +150,7 @@ export interface PopulatedApplication {
   _id: string;
   status: "applied" | "1st_round" | "2nd_round" | "selected" | "rejected";
   userId: PopulatedUser;
+  user: UserI | null;
 }
 
 export interface UserWithSkills {

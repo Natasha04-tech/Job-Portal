@@ -13,7 +13,7 @@ interface ApplicationTableProps {
 export default function ApplicationTable({ title, applications }: ApplicationTableProps) {
   const queryClient = useQueryClient();
   const { mutate: updateStatus } = useUpdateApplicationStatus();
-
+  console.log(applications);
   const [feedbackModal, setFeedbackModal] = useState<{
     open: boolean;
     appId: string | null;
@@ -95,8 +95,9 @@ const handleFeedbackSubmit = () => {
                 <th className="border-b p-3">Change Status</th>
               </tr>
             </thead>
-           <tbody>
+         <tbody>
   {applications.map((app) => (
+    
     <tr key={app._id} className="hover:bg-gray-50 transition">
       <td className="p-3">
         {app.userId ? `${app.userId.firstName} ${app.userId.lastName}` : "Unknown User"}

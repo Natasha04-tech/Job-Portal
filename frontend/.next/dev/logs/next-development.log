@@ -1,1370 +1,454 @@
-[00:00:01.125] Server  LOG      ✓ Ready in 826ms
-[00:00:06.014] Server  LOG      ○ Compiling / ...
-[00:00:08.918] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:09.255] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:09.255] Browser WARN    Image with src "/auth1.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:13.605] Browser LOG     applications are undefined
-[00:00:13.606] Browser LOG     applications are undefined
-[00:00:13.606] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGIxMGJkN2NmZDdhZmE1OTAxM2ZmMyIsImlhdCI6MTc2MjMzNTc4NiwiZXhwIjoxNzYyOTQwNTg2fQ.vksfSAghV3ODQbaZQcruFZyJ3pW7Fj9Z-2hnkXsyhPs","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
-[00:00:13.606] Browser LOG     applications are []
-[00:00:13.606] Browser LOG     applications are []
-[00:01:55.909] Server  LOG      ✓ Compiled in 128ms
-[00:02:00.016] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:00.500] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:22.821] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.826] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.832] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.834] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.840] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.841] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.843] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.844] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.848] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.849] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.850] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.854] Server  ERROR    ⨯ ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:22.867] Server  LOG      ✓ Compiled in 320ms
-[00:03:23.092] Browser ERROR   ./src/app/components/profile/UploadResume.tsx:4:1
-Module not found: Can't resolve './JobDesc'
-  2 |
-  3 | import React from "react";
-> 4 | import JobDesc from "./JobDesc";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { useRouter } from "next/navigation";
-  6 |
-  7 | interface Job {
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/profile/UploadResume.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component Browser]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/profile/UploadResume.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Client Component SSR]
-    ./src/app/components/profile/ProfilePage.tsx [Server Component]
-    ./src/app/profile/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:03:40.034] Server  LOG      ✓ Compiled in 112ms
-[00:05:03.490] Server  LOG      ✓ Compiled in 41ms
-[00:05:04.090] Browser ERROR   uncaughtError: ReferenceError: Toaster is not defined
-[00:05:08.358] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:05:08.397] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:05:08.401] Server  LOG      ✓ Compiled in 579ms
-[00:05:09.534] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:50.313] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:58.688] Server  LOG      ✓ Compiled in 28ms
-[00:11:01.074] Server  LOG      ✓ Compiled in 29ms
-[00:11:04.882] Server  LOG      ✓ Compiled in 45ms
-[00:11:07.938] Server  LOG      ✓ Compiled in 39ms
-[00:11:15.552] Server  LOG      ✓ Compiled in 32ms
-[00:11:16.730] Server  LOG      ✓ Compiled in 28ms
-[00:12:21.737] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:21.985] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:12:24.652] Browser WARN    Image with src "/auth1.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:13:33.727] Browser WARN    Image with src "/authImage.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:14:04.757] Browser LOG     applications are undefined
-[00:14:04.757] Browser LOG     applications are undefined
-[00:14:05.051] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGIyZjA1ZGI0NDA2M2E3M2I4ZDdlZCIsImlhdCI6MTc2MjM0MDYxMywiZXhwIjoxNzYyOTQ1NDEzfQ.abL1l-ZLUns8WmdMOZ4DOkPWEcIKbC01afUrDoxeGJs","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
-[00:14:05.051] Browser LOG     applications are []
-[00:14:05.051] Browser LOG     applications are []
-[00:14:23.348] Browser LOG     hello firstName natasha
-[00:14:23.348] Browser LOG     hello lastName chawda
-[00:14:23.348] Browser LOG     hello phone 1234567891
-[00:14:23.348] Browser LOG     hello email nat@gmail.com
-[00:14:23.348] Browser LOG     hello password 
-[00:14:23.348] Browser LOG     hello confirmPassword 
-[00:14:23.348] Browser LOG     hello skills[] nextjs
-[00:14:23.348] Browser LOG     hello resume {}
-[00:19:00.090] Browser WARN    Unauthorized - redirect to login maybe?
-[00:23:19.091] Browser WARN    Unauthorized - redirect to login maybe?
-[00:23:33.090] Browser WARN    Unauthorized - redirect to login maybe?
-[00:26:58.090] Browser WARN    Unauthorized - redirect to login maybe?
-[00:42:57.867] Browser WARN    Unauthorized - redirect to login maybe?
-[00:44:50.058] Server  LOG      ✓ Compiled in 31ms
-[00:46:43.395] Browser WARN    Unauthorized - redirect to login maybe?
-[00:46:52.090] Browser WARN    Unauthorized - redirect to login maybe?
-[00:46:59.090] Browser WARN    Unauthorized - redirect to login maybe?
-[00:47:42.091] Browser WARN    Unauthorized - redirect to login maybe?
-[00:48:36.726] Browser WARN    Unauthorized - redirect to login maybe?
-[00:51:44.456] Server  LOG      ✓ Compiled in 76ms
-[00:51:44.563] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:122:4
+[00:00:01.325] Server  LOG      ✓ Ready in 997ms
+[00:00:21.418] Server  LOG      ○ Compiling / ...
+[00:00:23.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:24.027] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:24.027] Browser WARN    Image with src "/auth1.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:22.743] Server  LOG      ✓ Compiled in 113ms
+[00:02:23.842] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'title')
+[00:02:25.180] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:02:25.251] Server  LOG      ✓ Compiled in 74ms
+[00:02:25.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:43.506] Server  LOG      ✓ Compiled in 34ms
+[00:03:48.545] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:50.179] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:50.396] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:33.422] Server  LOG      ✓ Compiled in 29ms
+[00:04:44.498] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:44.670] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:47.763] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MDk5ZmViNTZjZjhjMmU5ZjA1MTMyNCIsImlhdCI6MTc2MjM0MzIxOCwiZXhwIjoxNzYyOTQ4MDE4fQ.z5URRK-D2qSPKXLwvA66NrIy7LTUl5mL4E1W0DwH0GU","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:05:35.964] Browser WARN    Image with src "/auth1.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:57.521] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0MjM2ODgwNmM5YjdiMWQ4ZjU1NiIsImlhdCI6MTc2MjM1MDAzNiwiZXhwIjoxNzYyOTU0ODM2fQ.xWCeEfSK1gtMYup78x8F84CYy8aoEGfpj2LhNDTlRsU","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:05:59.654] Browser LOG     job id is 6909f20e61732df123fc5ec2
+[00:05:59.654] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 400
+[00:06:45.782] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0MjM2ODgwNmM5YjdiMWQ4ZjU1NiIsImlhdCI6MTc2MjM1MDAzNiwiZXhwIjoxNzYyOTU0ODM2fQ.xWCeEfSK1gtMYup78x8F84CYy8aoEGfpj2LhNDTlRsU","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:09:42.293] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:42.525] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:42.525] Browser WARN    Image with src "/auth1.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:00.398] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0MjM2ODgwNmM5YjdiMWQ4ZjU1NiIsImlhdCI6MTc2MjM1MDI4MSwiZXhwIjoxNzYyOTU1MDgxfQ.QbYAV1eOqB_FVL7TGjlZOvjco6aVtglsGRiVTb7f3g8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:10:02.371] Browser LOG     job id is 6909f20e61732df123fc5ec2
+[00:10:02.371] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 400
+[00:11:03.915] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0MjM2ODgwNmM5YjdiMWQ4ZjU1NiIsImlhdCI6MTc2MjM1MDI4MSwiZXhwIjoxNzYyOTU1MDgxfQ.QbYAV1eOqB_FVL7TGjlZOvjco6aVtglsGRiVTb7f3g8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:12:59.842] Browser WARN    Unauthorized - redirect to login maybe?
+[00:12:59.842] Browser WARN    Unauthorized - redirect to login maybe?
+[00:12:59.842] Browser WARN    Unauthorized - redirect to login maybe?
+[00:13:04.965] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0MjM2ODgwNmM5YjdiMWQ4ZjU1NiIsImlhdCI6MTc2MjM1MDI4MSwiZXhwIjoxNzYyOTU1MDgxfQ.QbYAV1eOqB_FVL7TGjlZOvjco6aVtglsGRiVTb7f3g8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:13:15.152] Browser LOG     job id is 6909f20e61732df123fc5ec2
+[00:13:15.399] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 400
+[00:13:27.800] Browser LOG     hello firstName shivani
+[00:13:27.800] Browser LOG     hello lastName jaiswal
+[00:13:27.800] Browser LOG     hello phone 1234456789
+[00:13:27.801] Browser LOG     hello email sj@gmail.com
+[00:13:27.801] Browser LOG     hello password 
+[00:13:27.801] Browser LOG     hello confirmPassword 
+[00:13:27.801] Browser LOG     hello resume {}
+[00:13:43.678] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0MjM2ODgwNmM5YjdiMWQ4ZjU1NiIsImlhdCI6MTc2MjM1MDI4MSwiZXhwIjoxNzYyOTU1MDgxfQ.QbYAV1eOqB_FVL7TGjlZOvjco6aVtglsGRiVTb7f3g8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:13:46.478] Browser LOG     job id is 6909f20e61732df123fc5ec2
+[00:13:47.588] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0MjM2ODgwNmM5YjdiMWQ4ZjU1NiIsImlhdCI6MTc2MjM1MDI4MSwiZXhwIjoxNzYyOTU1MDgxfQ.QbYAV1eOqB_FVL7TGjlZOvjco6aVtglsGRiVTb7f3g8","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":{"__v":0,"_id":"6909f20e61732df123fc5ec2","applications":["6909f62661732df123fc5f0c","690b55aece965ec27f2afbcc"],"companyName":"Bestpeers","createdAt":"2025-11-04T12:31:10.545Z","description":"1. Job Title: Software Developer\n\n2. Location: [Remote/On-site/Hybrid] – [City, Country]\n\n3. Employment Type: Full-time\n\n4. About the Role:\n   We are looking for a passionate and skilled Software Developer to join our development team. You will design, build, and maintain scalable web applications while collaborating with cross-functional teams to deliver high-quality software solutions.\n\n5. Key Responsibilities:\n   5.1 Design, develop, test, and deploy software applications.\n   5.2 Collaborate with product managers, designers, and other developers to define and implement new features.\n   5.3 Write clean, efficient, and maintainable code following best practices.\n   5.4 Troubleshoot, debug, and optimize existing applications for performance and scalability.\n   5.5 Participate in code reviews to maintain code quality.\n   5.6 Stay updated with the latest technologies, tools, and best practices in software development.\n\n6. Required Skills and Qualifications:\n   6.1 Bachelor’s degree in Computer Science, Engineering, or a related field (or equivalent experience).\n   6.2 Proficiency in at least one programming language such as JavaScript, TypeScript, Python, Java, or C#.\n   6.3 Experience with frameworks like React, Angular, Node.js, Express, Django, or Spring Boot.\n   6.4 Familiarity with RESTful APIs, Git/GitHub, and SQL or NoSQL databases.\n   6.5 Understanding of Agile or Scrum methodologies.\n   6.6 Strong problem-solving and analytical skills.\n   6.7 Good communication and teamwork abilities.\n\n7. Preferred Skills:\n   7.1 Experience with cloud platforms such as AWS, Azure, or Google Cloud.\n   7.2 Knowledge of CI/CD pipelines and containerization tools like Docker or Kubernetes.\n   7.3 Experience with testing frameworks such as Jest, Mocha, or JUnit.\n   7.4 Understanding of version control and DevOps practices.\n\n8. What We Offer:\n   8.1 Competitive salary and performance-based incentives.\n   8.2 Flexible working hours and remote work options.\n   8.3 Professional growth and learning opportunities.\n   8.4 Collaborative and inclusive work environment.","experience":"2 years","keySkills":["React","Nodejs"],"location":"Indore","openings":3,"salary":"12LPA","title":"Software Developer","updatedAt":"2025-11-05T13:48:30.703Z"},"status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":"690b42368806c9b7b1d8f556"}],"headers":{"content-length":"2674","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:15:06.805] Server  LOG      ✓ Compiled in 39ms
+[00:15:06.910] Browser ERROR   ./src/app/components/adminDashBoard/ApplicationTable.tsx:101:9
 Parsing ecmascript source code failed
-  120 |       {selectedJob && (
-  121 |         
-> 122 |   );
-      |    ^
-  123 | }
-  124 |
+   99 |   {applications.map((app) => (
+  100 |     console.log(app)
+> 101 |     <tr key={app._id} className="hover:bg-gray-50 transition">
+      |         ^^^
+  102 |       <td className="p-3">
+  103 |         {app.user ? `${app.user.firstName} ${app.user.lastName}` : "Unknown User"}
+  104 |       </td>
 
-Expected '</', got ';'
+Expected '</', got 'key'
 
 Import traces:
   Client Component Browser:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component Browser]
     ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
     ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
     ./src/app/dashboard/page.tsx [Client Component Browser]
     ./src/app/dashboard/page.tsx [Server Component]
 
   Client Component SSR:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component SSR]
     ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
     ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
     ./src/app/dashboard/page.tsx [Client Component SSR]
     ./src/app/dashboard/page.tsx [Server Component]
-[00:51:50.377] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
+[00:15:10.410] Browser ERROR   ./src/app/components/adminDashBoard/ApplicationTable.tsx:100:17
 Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:52:27.664] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:52:29.411] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:52:33.590] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:52:40.043] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:52:43.452] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:52:46.061] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:52:51.071] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:52:52.565] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:52:54.269] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:52:55.301] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:52:57.662] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:53:06.908] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:53:08.440] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:53:13.216] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:53:38.634] Server  LOG      ✓ Compiled in 36ms
-[00:55:22.877] Server  LOG      ✓ Compiled in 27ms
-[00:55:23.093] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:121:1
-Parsing ecmascript source code failed
-  119 |       {/* Applicants Modal */}
-  120 |       {selectedJob && 
-> 121 | }
-      | ^
-  122 |
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:55:25.844] Server  LOG      ✓ Compiled in 23ms
-[00:55:26.090] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:122:1
-Parsing ecmascript source code failed
-  120 |       {selectedJob &&  <ApplicantsModal job={selectedJob} onClose={() => setSelectedJob(null)} />
-  121 | }
-> 122 |
-      | ^
-
-Expected '</', got '<eof>'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:55:44.090] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:123:1
-Parsing ecmascript source code failed
-  121 |   <ApplicantsModal job={selectedJob} onClose={() => setSelectedJob(null)} />
-  122 | )}
-> 123 |
-      | ^
-
-Expected '</', got '<eof>'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:55:48.090] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:123:1
-Parsing ecmascript source code failed
-  121 |   <ApplicantsModa job={selectedJob} onClose={() => setSelectedJob(null)} />
-  122 | )}
-> 123 |
-      | ^
-
-Expected '</', got '<eof>'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:55:49.091] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:123:1
-Parsing ecmascript source code failed
-  121 |   <ApplicantsModal job={selectedJob} onClose={() => setSelectedJob(null)} />
-  122 | )}
-> 123 |
-      | ^
-
-Expected '</', got '<eof>'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:55:51.090] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:124:1
-Parsing ecmascript source code failed
-  122 |   <ApplicantsModal job={selectedJob} onClose={() => setSelectedJob(null)} />
-  123 | )}
-> 124 |
-      | ^
-
-Expected '</', got '<eof>'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:56:20.452] Server  LOG      ✓ Compiled in 30ms
-[00:56:37.327] Server  LOG      ✓ Compiled in 49ms
-[00:56:38.091] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:155:5
-Parsing ecmascript source code failed
-  153 |       )}
-  154 |       {selectedJob && (
-> 155 |     </div>
-      |     ^
-  156 |   );
-  157 | }
-  158 |
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:56:38.091] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:153:8
-Parsing ecmascript source code failed
-  151 |           </div>
-  152 |         </div>
-> 153 |       )}
-      |        ^
-  154 |       {selectedJob && (
-  155 |     </div>
-  156 |   );
-
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:56:38.091] Browser ERROR   ./src/app/components/adminDashBoard/jobList.tsx:155:6
-Parsing ecmascript source code failed
-  153 |       )}
-  154 |       {selectedJob && (
-> 155 |     </div>
-      |      ^^^^^
-  156 |   );
-  157 | }
-  158 |
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:56:39.368] Server  LOG      ✓ Compiled in 38ms
-[00:56:50.812] Server  LOG      ✓ Compiled in 49ms
-[00:56:56.606] Server  LOG      ✓ Compiled in 69ms
-[00:57:09.229] Browser WARN    Unauthorized - redirect to login maybe?
-[00:57:29.027] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'firstName')
-[01:00:56.230] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:00:56.380] Server  LOG      ✓ Compiled in 28ms
-[01:00:56.879] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:00:59.895] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:05:18.318] Server  LOG      ✓ Compiled in 58ms
-[01:05:55.486] Server  LOG      ✓ Compiled in 34ms
-[01:06:00.636] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'firstName')
-[01:06:45.439] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:06:45.574] Server  LOG      ✓ Compiled in 33ms
-[01:06:46.040] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:06:46.295] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:06:57.563] Server  LOG      ✓ Compiled in 47ms
-[01:07:03.662] Server  LOG      ✓ Compiled in 46ms
-[01:22:07.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:22:07.810] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:26:11.955] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:26:12.201] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:29:10.620] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:29:10.795] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:31:20.945] Server  LOG      ✓ Compiled in 24ms
-[01:31:23.349] Server  LOG      ✓ Compiled in 41ms
-[01:31:30.995] Server  LOG      ✓ Compiled in 68ms
-[01:31:34.253] Server  LOG      ✓ Compiled in 34ms
-[01:31:42.850] Server  LOG      ✓ Compiled in 24ms
-[01:31:45.298] Server  LOG      ✓ Compiled in 33ms
-[01:32:04.420] Server  LOG      ✓ Compiled in 26ms
-[01:32:07.513] Server  LOG      ✓ Compiled in 24ms
-[01:32:11.376] Server  LOG      ✓ Compiled in 25ms
-[01:34:02.102] Server  LOG      ✓ Compiled in 26ms
-[01:34:04.136] Server  LOG      ✓ Compiled in 33ms
-[01:34:08.006] Server  LOG      ✓ Compiled in 39ms
-[01:34:23.088] Server  LOG      ✓ Compiled in 26ms
-[01:34:27.159] Server  LOG      ✓ Compiled in 45ms
-[01:34:29.213] Server  LOG      ✓ Compiled in 29ms
-[01:34:38.428] Server  LOG      ✓ Compiled in 22ms
-[01:37:50.741] Server  LOG      ✓ Compiled in 27ms
-[01:37:52.277] Server  LOG      ✓ Compiled in 39ms
-[01:38:08.882] Server  LOG      ✓ Compiled in 29ms
-[01:38:18.343] Server  LOG      ✓ Compiled in 33ms
-[01:38:21.440] Server  LOG      ✓ Compiled in 28ms
-[01:38:29.177] Server  LOG      ✓ Compiled in 58ms
-[01:38:30.092] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:269:26
-Parsing ecmascript source code failed
-  267 |                 Cancel
-  268 |               </button>
-> 269 |              {isLoading ?) <button
-      |                          ^
-  270 |                 onClick={handleSaveUser}
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-
-Expected '</', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[01:38:37.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:269:25
-Parsing ecmascript source code failed
-  267 |                 Cancel
-  268 |               </button>
-> 269 |              {isLoading ) <button
-      |                         ^
-  270 |                 onClick={handleSaveUser}
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-
-Expected '</', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[01:38:49.936] Server  LOG      ✓ Compiled in 58ms
-[01:38:52.761] Server  LOG      ✓ Compiled in 29ms
-[01:38:53.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:28
-Parsing ecmascript source code failed
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-> 273 |                {isLoading ?} Save
-      |                            ^
-  274 |               </button>
-  275 |             </div>
-  276 |           </div>
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[01:38:56.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:28
-Parsing ecmascript source code failed
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-> 273 |                {isLoading ?} 
-      |                            ^
-  274 |               </button>
-  275 |             </div>
-  276 |           </div>
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[01:39:00.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:31
-Parsing ecmascript source code failed
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-> 273 |                {isLoading ? sa} 
-      |                               ^
-  274 |               </button>
-  275 |             </div>
-  276 |           </div>
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[01:39:03.092] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:35
-Parsing ecmascript source code failed
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-> 273 |                {isLoading ? saving} 
-      |                                   ^
-  274 |               </button>
-  275 |             </div>
-  276 |           </div>
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[01:39:05.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:37
-Parsing ecmascript source code failed
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-> 273 |                {isLoading ? saving :} 
-      |                                     ^
-  274 |               </button>
-  275 |             </div>
-  276 |           </div>
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[01:39:08.247] Server  LOG      ✓ Compiled in 76ms
-[01:39:19.964] Server  LOG      ✓ Compiled in 28ms
-[01:39:20.091] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:42
-Parsing ecmascript source code failed
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-> 273 |                {isLoading ? (saving :save} 
-      |                                          ^
-  274 |               </button>
-  275 |             </div>
-  276 |           </div>
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[01:39:23.093] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:43
-Parsing ecmascript source code failed
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-> 273 |                {isLoading ? (saving :save)} 
-      |                                           ^
-  274 |               </button>
-  275 |             </div>
-  276 |           </div>
-
-Expected '</', got '}'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[01:40:02.090] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:41
-Parsing ecmascript source code failed
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-> 273 |                {isLoading ? saving :save)} 
-      |                                         ^
-  274 |               </button>
-  275 |             </div>
-  276 |           </div>
-
-Expected '</', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
-    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[01:40:07.090] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:41
-Parsing ecmascript source code failed
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-> 273 |                {isLoading ? saving :save"} 
-      |                                         ^^^
-  274 |               </button>
-  275 |             </div>
-  276 |           </div>
+   98 |          <tbody>
+   99 |   {applications.map((app) => (
+> 100 |     console.log("appapp)
+      |                 ^^^^^^^^
+  101 |     <tr key={app._id} className="hover:bg-gray-50 transition">
+  102 |       <td className="p-3">
+  103 |         {app.user ? `${app.user.firstName} ${app.user.lastName}` : "Unknown User"}
 
 Unterminated string constant
 
 Import traces:
   Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
     ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
     ./src/app/dashboard/page.tsx [Client Component Browser]
     ./src/app/dashboard/page.tsx [Server Component]
 
   Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
     ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
     ./src/app/dashboard/page.tsx [Client Component SSR]
     ./src/app/dashboard/page.tsx [Server Component]
-[01:40:14.085] Server  LOG      ✓ Compiled in 31ms
-[01:40:15.090] Browser ERROR   ./src/app/components/adminDashBoard/userList.tsx:273:35
+[00:15:13.392] Browser ERROR   ./src/app/components/adminDashBoard/ApplicationTable.tsx:100:27
 Parsing ecmascript source code failed
-  271 |                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all"
-  272 |               >
-> 273 |                {isLoading ? saving" :"save"} 
-      |                                   ^^^^
-  274 |               </button>
-  275 |             </div>
-  276 |           </div>
+   98 |          <tbody>
+   99 |   {applications.map((app) => (
+> 100 |     console.log("app data"app)
+      |                           ^^^
+  101 |     <tr key={app._id} className="hover:bg-gray-50 transition">
+  102 |       <td className="p-3">
+  103 |         {app.user ? `${app.user.firstName} ${app.user.lastName}` : "Unknown User"}
 
-Expected '</', got 'string literal ( :, " :")'
+Expected '</', got 'app'
 
 Import traces:
   Client Component Browser:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
     ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
     ./src/app/dashboard/page.tsx [Client Component Browser]
     ./src/app/dashboard/page.tsx [Server Component]
 
   Client Component SSR:
-    ./src/app/components/adminDashBoard/userList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
     ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
     ./src/app/dashboard/page.tsx [Client Component SSR]
     ./src/app/dashboard/page.tsx [Server Component]
-[01:40:37.678] Browser WARN    Unauthorized - redirect to login maybe?
-[01:41:03.696] Server  LOG      ✓ Compiled in 43ms
-[01:41:08.168] Server  LOG      ✓ Compiled in 24ms
-[01:41:16.473] Server  LOG      ✓ Compiled in 30ms
-[01:41:21.178] Server  LOG      ✓ Compiled in 22ms
-[01:41:23.382] Server  LOG      ✓ Compiled in 25ms
-[01:41:25.546] Server  LOG      ✓ Compiled in 29ms
-[01:41:29.221] Server  LOG      ✓ Compiled in 64ms
-[01:41:33.765] Server  LOG      ✓ Compiled in 24ms
-[01:44:23.570] Server  LOG      ✓ Compiled in 29ms
-[01:44:30.692] Server  LOG      ✓ Compiled in 34ms
-[01:44:30.794] Browser ERROR   ./src/app/customHooks/useJobs.ts:42:5
+[00:15:14.601] Browser ERROR   ./src/app/components/adminDashBoard/ApplicationTable.tsx:101:9
 Parsing ecmascript source code failed
-  40 |       queryClient.invalidateQueries({ queryKey: ["jobs"] });
-  41 |       toast,
-> 42 |     },
-     |     ^
-  43 |   });
-  44 | };
-  45 |
+   99 |   {applications.map((app) => (
+  100 |     console.log("app data",app)
+> 101 |     <tr key={app._id} className="hover:bg-gray-50 transition">
+      |         ^^^
+  102 |       <td className="p-3">
+  103 |         {app.user ? `${app.user.firstName} ${app.user.lastName}` : "Unknown User"}
+  104 |       </td>
 
-Expression expected
+Expected '</', got 'key'
 
 Import traces:
   Client Component Browser:
-    ./src/app/customHooks/useJobs.ts [Client Component Browser]
-    ./src/app/components/jobs/JobPage.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
     ./src/app/dashboard/page.tsx [Client Component Browser]
     ./src/app/dashboard/page.tsx [Server Component]
 
   Client Component SSR:
-    ./src/app/customHooks/useJobs.ts [Client Component SSR]
-    ./src/app/components/jobs/JobPage.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
     ./src/app/dashboard/page.tsx [Client Component SSR]
     ./src/app/dashboard/page.tsx [Server Component]
-[01:44:40.001] Server  LOG      ✓ Compiled in 55ms
-[01:44:44.305] Server  LOG      ✓ Compiled in 24ms
-[01:45:03.378] Server  LOG      ✓ Compiled in 34ms
-[01:45:07.106] Server  LOG      ✓ Compiled in 32ms
-[01:45:12.575] Server  LOG      ✓ Compiled in 22ms
-[01:45:21.964] Server  LOG      ✓ Compiled in 26ms
-[01:45:35.062] Server  LOG      ✓ Compiled in 62ms
-[01:45:38.158] Server  LOG      ✓ Compiled in 39ms
-[01:45:39.174] Server  LOG      ✓ Compiled in 36ms
-[01:45:51.001] Server  LOG      ✓ Compiled in 25ms
-[01:45:55.316] Server  LOG      ✓ Compiled in 28ms
-[01:46:05.446] Server  LOG      ✓ Compiled in 27ms
-[01:46:10.494] Server  LOG      ✓ Compiled in 28ms
-[01:46:17.173] Server  LOG      ✓ Compiled in 31ms
-[01:46:22.010] Server  LOG      ✓ Compiled in 29ms
-[01:46:23.628] Server  LOG      ✓ Compiled in 28ms
-[01:46:25.083] Server  LOG      ✓ Compiled in 25ms
-[01:46:31.322] Server  LOG      ✓ Compiled in 28ms
-[01:52:32.213] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:52:32.441] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:55:58.731] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:55:58.962] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:17.477] Browser ERROR   ./src/app/components/adminDashBoard/ApplicationTable.tsx:100:32
+Parsing ecmascript source code failed
+   98 |          <tbody>
+   99 |   {applications.map((app) => (
+> 100 |     console.log("app data",app);
+      |                                ^
+  101 |     <tr key={app._id} className="hover:bg-gray-50 transition">
+  102 |       <td className="p-3">
+  103 |         {app.user ? `${app.user.firstName} ${app.user.lastName}` : "Unknown User"}
+
+Expected '</', got ';'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:15:38.642] Server  LOG      ✓ Compiled in 28ms
+[00:15:38.743] Browser ERROR   ./src/app/components/adminDashBoard/ApplicationTable.tsx:100:13
+Parsing ecmascript source code failed
+   98 |          <tbody>
+   99 |   {applications.map((app) => (
+> 100 |     {console.log()}
+      |             ^
+  101 |     <tr key={app._id} className="hover:bg-gray-50 transition">
+  102 |       <td className="p-3">
+  103 |         {app.user ? `${app.user.firstName} ${app.user.lastName}` : "Unknown User"}
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:15:41.637] Browser ERROR   ./src/app/components/adminDashBoard/ApplicationTable.tsx:100:13
+Parsing ecmascript source code failed
+   98 |          <tbody>
+   99 |   {applications.map((app) => (
+> 100 |     {console.log("app")}
+      |             ^
+  101 |     <tr key={app._id} className="hover:bg-gray-50 transition">
+  102 |       <td className="p-3">
+  103 |         {app.user ? `${app.user.firstName} ${app.user.lastName}` : "Unknown User"}
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:15:43.494] Browser ERROR   ./src/app/components/adminDashBoard/ApplicationTable.tsx:100:13
+Parsing ecmascript source code failed
+   98 |          <tbody>
+   99 |   {applications.map((app) => (
+> 100 |     {console.log("app is")}
+      |             ^
+  101 |     <tr key={app._id} className="hover:bg-gray-50 transition">
+  102 |       <td className="p-3">
+  103 |         {app.user ? `${app.user.firstName} ${app.user.lastName}` : "Unknown User"}
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:15:46.377] Browser ERROR   ./src/app/components/adminDashBoard/ApplicationTable.tsx:100:13
+Parsing ecmascript source code failed
+   98 |          <tbody>
+   99 |   {applications.map((app) => (
+> 100 |     {console.log("app is",app)}
+      |             ^
+  101 |     <tr key={app._id} className="hover:bg-gray-50 transition">
+  102 |       <td className="p-3">
+  103 |         {app.user ? `${app.user.firstName} ${app.user.lastName}` : "Unknown User"}
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component Browser]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/adminDashBoard/ApplicationTable.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/applicationModal.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/jobList.tsx [Client Component SSR]
+    ./src/app/components/adminDashBoard/AdminDashboard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[00:16:42.787] Server  LOG      ✓ Compiled in 37ms
+[00:16:43.971] Server  LOG      ✓ Compiled in 34ms
+[00:17:43.174] Browser LOG     [{"__v":0,"_id":"6909f62661732df123fc5f0c","adminFeedback":"","createdAt":"2025-11-04T12:48:38.104Z","jobId":"6909f20e61732df123fc5ec2","status":"selected","updatedAt":"2025-11-05T13:10:48.884Z","userId":null},{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:17:43.174] Browser LOG     [{"__v":0,"_id":"6909f62661732df123fc5f0c","adminFeedback":"","createdAt":"2025-11-04T12:48:38.104Z","jobId":"6909f20e61732df123fc5ec2","status":"selected","updatedAt":"2025-11-05T13:10:48.884Z","userId":null},{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:18:29.574] Server  LOG      ✓ Compiled in 29ms
+[00:18:29.721] Browser LOG     [{"__v":0,"_id":"6909f62661732df123fc5f0c","adminFeedback":"","createdAt":"2025-11-04T12:48:38.104Z","jobId":"6909f20e61732df123fc5ec2","status":"selected","updatedAt":"2025-11-05T13:10:48.884Z","userId":null},{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:18:29.721] Browser LOG     [{"__v":0,"_id":"6909f62661732df123fc5f0c","adminFeedback":"","createdAt":"2025-11-04T12:48:38.104Z","jobId":"6909f20e61732df123fc5ec2","status":"selected","updatedAt":"2025-11-05T13:10:48.884Z","userId":null},{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:18:29.721] Browser LOG     [{"__v":0,"_id":"6909f62661732df123fc5f0c","adminFeedback":"","createdAt":"2025-11-04T12:48:38.104Z","jobId":"6909f20e61732df123fc5ec2","status":"selected","updatedAt":"2025-11-05T13:10:48.884Z","userId":null},{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:18:29.721] Browser LOG     [{"__v":0,"_id":"6909f62661732df123fc5f0c","adminFeedback":"","createdAt":"2025-11-04T12:48:38.104Z","jobId":"6909f20e61732df123fc5ec2","status":"selected","updatedAt":"2025-11-05T13:10:48.884Z","userId":null},{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:18:47.838] Server  LOG      ✓ Compiled in 33ms
+[00:18:47.966] Browser LOG     [{"__v":0,"_id":"6909f62661732df123fc5f0c","adminFeedback":"","createdAt":"2025-11-04T12:48:38.104Z","jobId":"6909f20e61732df123fc5ec2","status":"selected","updatedAt":"2025-11-05T13:10:48.884Z","userId":null},{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:18:47.966] Browser LOG     [{"__v":0,"_id":"6909f62661732df123fc5f0c","adminFeedback":"","createdAt":"2025-11-04T12:48:38.104Z","jobId":"6909f20e61732df123fc5ec2","status":"selected","updatedAt":"2025-11-05T13:10:48.884Z","userId":null},{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:18:47.966] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'firstName')
+[00:18:51.439] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:18:51.737] Server  LOG      ✓ Compiled in 57ms
+[00:18:52.656] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:53.388] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:18:54.189] Server  LOG      ✓ Compiled in 36ms
+[00:19:01.239] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:19:01.239] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:19:06.518] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:19:06.518] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:19:10.343] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:19:10.343] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:19:21.863] Server  LOG      ✓ Compiled in 38ms
+[00:19:24.606] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MDk5ZmViNTZjZjhjMmU5ZjA1MTMyNCIsImlhdCI6MTc2MjM1MDcxNSwiZXhwIjoxNzYyOTU1NTE1fQ.k0_9uQ0hcLH5JE-BVz1FkIIi_OzPtVa_UEShcKAdI08","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:19:32.151] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:19:32.151] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:19:37.773] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:19:37.773] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:19:37.773] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:19:37.773] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"applied","updatedAt":"2025-11-05T13:48:30.646Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:20:24.614] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:24.832] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:20:26.078] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","adminFeedback":"","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"1st_round","updatedAt":"2025-11-05T13:54:21.417Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:20:26.078] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","adminFeedback":"","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"1st_round","updatedAt":"2025-11-05T13:54:21.417Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:20:28.967] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","adminFeedback":"","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"1st_round","updatedAt":"2025-11-05T13:54:21.417Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:20:28.967] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","adminFeedback":"","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"1st_round","updatedAt":"2025-11-05T13:54:21.417Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:20:28.967] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","adminFeedback":"","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"1st_round","updatedAt":"2025-11-05T13:54:21.417Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:20:28.967] Browser LOG     [{"__v":0,"_id":"690b55aece965ec27f2afbcc","adminFeedback":"","createdAt":"2025-11-05T13:48:30.646Z","jobId":"6909f20e61732df123fc5ec2","status":"1st_round","updatedAt":"2025-11-05T13:54:21.417Z","userId":{"_id":"690b42368806c9b7b1d8f556","email":"sj@gmail.com","firstName":"shivani","lastName":"jaiswal"}}]
+[00:26:00.843] Browser ERROR   ./src/app/jobs/[id]/page.tsx:2:10
+Ecmascript file had an error
+  1 | import React from "react";
+> 2 | import { useParams } from "next/navigation";
+    |          ^^^^^^^^^
+  3 | import toast from "react-hot-toast";
+  4 |
+  5 | import { MapPin, Briefcase, IndianRupee, Users, Building2, Star } from "lucide-react";
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:00.843] Browser ERROR   ./src/app/jobs/[id]/page.tsx:3:10
+Ecmascript file had an error
+  1 |
+  2 | import React from "react";
+> 3 | import { useParams } from "next/navigation";
+    |          ^^^^^^^^^
+  4 | import toast from "react-hot-toast";
+  5 |
+  6 | import { MapPin, Briefcase, IndianRupee, Users, Building2, Star } from "lucide-react";
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:03.843] Browser ERROR   ./src/app/jobs/[id]/page.tsx:3:10
+Ecmascript file had an error
+  1 | 'use'
+  2 | import React from "react";
+> 3 | import { useParams } from "next/navigation";
+    |          ^^^^^^^^^
+  4 | import toast from "react-hot-toast";
+  5 |
+  6 | import { MapPin, Briefcase, IndianRupee, Users, Building2, Star } from "lucide-react";
+
+You're importing a component that needs `useParams`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:27:06.138] Server  LOG      ✓ Compiled in 132ms
+[00:27:44.004] Browser WARN    Image with src "/auth1.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:27:52.562] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0M2MxODgwNmM5YjdiMWQ4ZjU4ZSIsImlhdCI6MTc2MjM1MTM1NCwiZXhwIjoxNzYyOTU2MTU0fQ.nguFS11gfkdEnBZFF7Em5SCkI8dJAPAWwGn2l1fNPuA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:28:03.584] Server  LOG      ✓ Compiled in 63ms
+[00:28:03.740] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0M2MxODgwNmM5YjdiMWQ4ZjU4ZSIsImlhdCI6MTc2MjM1MTM1NCwiZXhwIjoxNzYyOTU2MTU0fQ.nguFS11gfkdEnBZFF7Em5SCkI8dJAPAWwGn2l1fNPuA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:28:13.375] Browser LOG     job id is 6909f20e61732df123fc5ec2
+[00:28:13.375] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 400
+[00:31:29.046] Server  LOG      ✓ Compiled in 66ms
+[00:31:29.843] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0M2MxODgwNmM5YjdiMWQ4ZjU4ZSIsImlhdCI6MTc2MjM1MTM1NCwiZXhwIjoxNzYyOTU2MTU0fQ.nguFS11gfkdEnBZFF7Em5SCkI8dJAPAWwGn2l1fNPuA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:31:33.969] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0M2MxODgwNmM5YjdiMWQ4ZjU4ZSIsImlhdCI6MTc2MjM1MTM1NCwiZXhwIjoxNzYyOTU2MTU0fQ.nguFS11gfkdEnBZFF7Em5SCkI8dJAPAWwGn2l1fNPuA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:31:37.761] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:38.054] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:31:41.312] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:41.565] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:31:41.887] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0M2MxODgwNmM5YjdiMWQ4ZjU4ZSIsImlhdCI6MTc2MjM1MTM1NCwiZXhwIjoxNzYyOTU2MTU0fQ.nguFS11gfkdEnBZFF7Em5SCkI8dJAPAWwGn2l1fNPuA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:32:22.917] Server  LOG      ✓ Compiled in 29ms
+[00:32:25.952] Server  LOG      ✓ Compiled in 28ms
+[00:32:27.478] Server  LOG      ✓ Compiled in 26ms
+[00:32:30.663] Server  LOG      ✓ Compiled in 25ms
+[00:32:32.255] Server  LOG      ✓ Compiled in 30ms
+[00:32:34.010] Server  LOG      ✓ Compiled in 30ms
+[00:32:40.508] Server  LOG      ✓ Compiled in 26ms
+[00:32:42.214] Server  LOG      ✓ Compiled in 35ms
+[00:32:44.486] Server  LOG      ✓ Compiled in 35ms
+[00:32:44.592] Browser ERROR   ./src/app/jobs/[id]/page.tsx:108:25
+Parsing ecmascript source code failed
+  106 |             onClick={handleApply}
+  107 |             disabled={applyJobMutation.isPending || hasApplied}
+> 108 |             className={`px-8 py-3 rounded-lg font-medium text-sm transition-all duration-200 shadow-sm hover:shadow-md ${
+      |                         ^^
+  109 |               hasApplied
+  110 |                 ? "bg-gray-400 text-white cursor-not-allowed"
+  111 |                 : "bg-blue-600 text-white hover:bg-blue-700"
+
+Expected ',', got 'px'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/jobs/[id]/page.tsx [Client Component Browser]
+    ./src/app/jobs/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/jobs/[id]/page.tsx [Client Component SSR]
+    ./src/app/jobs/[id]/page.tsx [Server Component]
+[00:32:47.075] Server  LOG      ✓ Compiled in 27ms
+[00:32:49.430] Server  LOG      ✓ Compiled in 30ms
+[00:32:51.341] Server  LOG      ✓ Compiled in 31ms
+[00:32:51.443] Browser ERROR   ./src/app/jobs/[id]/page.tsx:41:43
+Parsing ecmascript source code failed
+  39 |       toast.error("Please upload your resume before applying!");
+  40 |       // Optional: redirect to profile page to upload resume
+> 41 |       router.push(`/profile/${currentUser.}`);
+     |                                           ^
+  42 |       return;
+  43 |     }
+  44 |
+
+Expected ident
+
+Import traces:
+  Client Component Browser:
+    ./src/app/jobs/[id]/page.tsx [Client Component Browser]
+    ./src/app/jobs/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/jobs/[id]/page.tsx [Client Component SSR]
+    ./src/app/jobs/[id]/page.tsx [Server Component]
+[00:32:52.819] Server  LOG      ✓ Compiled in 30ms
+[00:33:34.975] Server  LOG      ✓ Compiled in 26ms
+[00:33:54.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:54.630] Browser WARN    Image with src "/jobLogo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:33:56.917] Browser LOG     applications are undefined
+[00:33:56.917] Browser LOG     applications are undefined
+[00:33:56.917] Browser LOG     11 {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGI0M2MxODgwNmM5YjdiMWQ4ZjU4ZSIsImlhdCI6MTc2MjM1MTM1NCwiZXhwIjoxNzYyOTU2MTU0fQ.nguFS11gfkdEnBZFF7Em5SCkI8dJAPAWwGn2l1fNPuA","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/applications/my","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":[],"headers":{"content-length":"2","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[00:33:56.917] Browser LOG     applications are []
+[00:33:56.917] Browser LOG     applications are []

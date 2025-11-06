@@ -956,428 +956,108 @@ function JobForm({ onClose }) {
     }, this);
 }
 }),
-"[project]/src/app/customHooks/useJobApplication.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "useApplyJob",
-    ()=>useApplyJob,
-    "useUpdateApplicationStatus",
-    ()=>useUpdateApplicationStatus,
-    "useUserApplications",
-    ()=>useUserApplications
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/useQuery.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useMutation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/useMutation.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$lib$2f$axiosInstance$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/lib/axiosInstance.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$utility$2f$axiosApi$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/utility/axiosApi.ts [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hot-toast/dist/index.mjs [app-ssr] (ecmascript)");
-"use client";
-;
-;
-;
-;
-const updateApplicationStatus = async ({ id, status, feedback })=>{
-    const res = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$lib$2f$axiosInstance$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].put(`/applications/${id}/status`, {
-        status,
-        adminFeedback: feedback
-    });
-    return res.data;
-};
-const useUserApplications = ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"])({
-        queryKey: [
-            "userApplications"
-        ],
-        queryFn: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$utility$2f$axiosApi$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fetchUserApplications"]
-    });
-const useApplyJob = ()=>{
-    const queryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQueryClient"])();
-    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useMutation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMutation"])({
-        mutationFn: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$utility$2f$axiosApi$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["applyForJob"],
-        onSuccess: ()=>{
-            queryClient.invalidateQueries({
-                queryKey: [
-                    "userApplications"
-                ]
-            });
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].success("Applied Successfully");
-        }
-    });
-};
-const useUpdateApplicationStatus = ()=>{
-    const queryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQueryClient"])();
-    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useMutation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMutation"])({
-        mutationFn: updateApplicationStatus,
-        onSuccess: ()=>{
-            queryClient.invalidateQueries({
-                queryKey: [
-                    "userApplications"
-                ]
-            });
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].success("Application Updated Successfully");
-        }
-    });
-};
-}),
 "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
     "default",
-    ()=>ApplicationTable
+    ()=>ApplicantsModal
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useJobApplication$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/customHooks/useJobApplication.ts [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$adminDashBoard$2f$ApplicationTable$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/adminDashBoard/ApplicationTable.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
 ;
-;
-function ApplicationTable({ title, applications }) {
-    const queryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQueryClient"])();
-    const { mutate: updateStatus } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$customHooks$2f$useJobApplication$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useUpdateApplicationStatus"])();
-    console.log(applications);
-    const [feedbackModal, setFeedbackModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
-        open: false,
-        appId: null
-    });
-    const [feedback, setFeedback] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
-    const handleStatusChange = (appId, status)=>{
-        if (status === "rejected") {
-            setFeedbackModal({
-                open: true,
-                appId
-            });
-        } else {
-            // Optimistic update
-            queryClient.setQueryData([
-                "userApplications"
-            ], (oldData)=>{
-                if (!oldData) return oldData;
-                return oldData.map((job)=>({
-                        ...job,
-                        applications: job.applications.map((app)=>app._id === appId ? {
-                                ...app,
-                                status
-                            } : app)
-                    }));
-            });
-            updateStatus({
-                id: appId,
-                status,
-                feedback: ""
-            }, {
-                onSettled: ()=>{
-                    queryClient.invalidateQueries({
-                        queryKey: [
-                            "userApplications"
-                        ]
-                    });
-                }
-            });
-        }
-    };
-    const handleFeedbackSubmit = ()=>{
-        if (!feedbackModal.appId) return;
-        queryClient.setQueryData([
-            "userApplications"
-        ], (oldData)=>{
-            if (!oldData) return oldData;
-            return oldData.map((job)=>({
-                    ...job,
-                    applications: job.applications.map((app)=>app._id === feedbackModal.appId ? {
-                            ...app,
-                            status: "rejected",
-                            feedback
-                        } : app)
-                }));
-        });
-        updateStatus({
-            id: feedbackModal.appId,
-            status: "rejected",
-            feedback
-        }, {
-            onSettled: ()=>{
-                queryClient.invalidateQueries({
-                    queryKey: [
-                        "userApplications"
-                    ]
-                });
-            }
-        });
-        setFeedbackModal({
-            open: false,
-            appId: null
-        });
-        setFeedback("");
-    };
+function ApplicantsModal({ job, onClose }) {
+    const capitalizeFirst = (text)=>text ? text.charAt(0).toUpperCase() + text.slice(1).toLowerCase() : "";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "bg-white shadow-md rounded-xl p-4 mb-6",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                className: "font-semibold text-lg mb-3 text-gray-800",
-                children: [
-                    "Applications for ",
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-blue-600",
-                        children: title
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                        lineNumber: 84,
-                        columnNumber: 26
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                lineNumber: 83,
-                columnNumber: 7
-            }, this),
-            applications.length ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "overflow-x-auto",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
-                    className: "w-full text-left border-collapse text-sm",
+        className: "fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm animate-fadeIn",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "relative w-[92%] md:w-[75%] lg:w-[60%] bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-gray-200/60 overflow-hidden animate-slideUp",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-gray-200 flex items-center justify-between p-5",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
-                            className: "bg-gray-100 text-gray-700",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                        className: "border-b p-3",
-                                        children: "Applicant"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                        lineNumber: 92,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                        className: "border-b p-3",
-                                        children: "Email"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                        lineNumber: 93,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                        className: "border-b p-3",
-                                        children: "Status"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                        lineNumber: 94,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
-                                        className: "border-b p-3",
-                                        children: "Change Status"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                        lineNumber: 95,
-                                        columnNumber: 17
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                lineNumber: 91,
-                                columnNumber: 15
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                            lineNumber: 90,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
-                            children: applications.map((app)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                    className: "hover:bg-gray-50 transition",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                            className: "p-3",
-                                            children: app.userId ? `${app.userId.firstName} ${app.userId.lastName}` : "Unknown User"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                            lineNumber: 102,
-                                            columnNumber: 7
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                            className: "p-3",
-                                            children: app.userId?.email ?? "N/A"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                            lineNumber: 105,
-                                            columnNumber: 7
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                            className: "p-3 capitalize",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: `px-2 py-1 rounded-full text-xs font-medium ${app.status === "selected" ? "bg-green-100 text-green-700" : app.status === "rejected" ? "bg-red-100 text-red-700" : app.status === "applied" ? "bg-blue-100 text-blue-700" : "bg-yellow-100 text-yellow-700"}`,
-                                                children: app.status.replace("_", " ")
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                                lineNumber: 107,
-                                                columnNumber: 9
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                            lineNumber: 106,
-                                            columnNumber: 7
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                            className: "p-3",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                                value: app.status,
-                                                onChange: (e)=>handleStatusChange(app._id, e.target.value),
-                                                className: "border rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                        value: "applied",
-                                                        children: "Applied"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                                        lineNumber: 137,
-                                                        columnNumber: 11
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                        value: "1st_round",
-                                                        children: "1st Round"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                                        lineNumber: 138,
-                                                        columnNumber: 11
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                        value: "2nd_round",
-                                                        children: "2nd Round"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                                        lineNumber: 139,
-                                                        columnNumber: 11
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                        value: "selected",
-                                                        children: "Selected"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                                        lineNumber: 140,
-                                                        columnNumber: 11
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                        value: "rejected",
-                                                        children: "Rejected"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                                        lineNumber: 141,
-                                                        columnNumber: 11
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                                lineNumber: 122,
-                                                columnNumber: 9
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                            lineNumber: 121,
-                                            columnNumber: 7
-                                        }, this)
-                                    ]
-                                }, app._id, true, {
-                                    fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                    lineNumber: 101,
-                                    columnNumber: 5
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                            lineNumber: 98,
-                            columnNumber: 10
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                    lineNumber: 89,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                lineNumber: 88,
-                columnNumber: 9
-            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-gray-500 text-sm",
-                children: "No applications yet."
-            }, void 0, false, {
-                fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                lineNumber: 151,
-                columnNumber: 9
-            }, this),
-            feedbackModal.open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-white rounded-lg shadow-lg p-6 w-96",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                            className: "text-lg font-semibold mb-3 text-gray-800",
-                            children: "Provide Rejection Feedback"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                            lineNumber: 158,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
-                            value: feedback,
-                            onChange: (e)=>setFeedback(e.target.value),
-                            rows: 4,
-                            placeholder: "Enter feedback for the applicant...",
-                            className: "w-full border rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-400"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                            lineNumber: 159,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex justify-end gap-2 mt-4",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: "text-xl font-semibold text-gray-800",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>setFeedbackModal({
-                                            open: false,
-                                            appId: null
-                                        }),
-                                    className: "px-3 py-1 rounded-md border text-gray-700 hover:bg-gray-100",
-                                    children: "Cancel"
+                                "Applicants for",
+                                " ",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-blue-600",
+                                    children: capitalizeFirst(job.title)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                    lineNumber: 167,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: handleFeedbackSubmit,
-                                    className: "px-4 py-1 bg-red-600 text-white rounded-md hover:bg-red-700",
-                                    children: "Submit"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                                    lineNumber: 173,
-                                    columnNumber: 15
+                                    lineNumber: 24,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                            lineNumber: 166,
-                            columnNumber: 13
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: onClose,
+                            className: "p-2 rounded-full hover:bg-gray-100 text-gray-600 hover:text-gray-800 transition-all",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                size: 20
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
+                                lineNumber: 30,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
+                            lineNumber: 26,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                    lineNumber: 157,
-                    columnNumber: 11
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "p-6 overflow-y-auto max-h-[75vh] scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100",
+                    children: job.applications?.length ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$adminDashBoard$2f$ApplicationTable$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        title: capitalizeFirst(job.title),
+                        applications: job.applications
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
+                        lineNumber: 37,
+                        columnNumber: 13
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col items-center justify-center text-gray-600 py-12",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-center text-base",
+                            children: "No applications yet for this job."
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
+                            lineNumber: 43,
+                            columnNumber: 15
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
+                        lineNumber: 42,
+                        columnNumber: 13
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
+                    lineNumber: 35,
+                    columnNumber: 9
                 }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-                lineNumber: 156,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
+            lineNumber: 19,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "[project]/src/app/components/adminDashBoard/ApplicationTable.tsx",
-        lineNumber: 82,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }
@@ -1715,7 +1395,7 @@ function JobsList() {
                                             // Filter out deleted users before opening modal
                                             const filteredJob = {
                                                 ...job,
-                                                applications: job.applications.filter((app)=>app.userId !== null)
+                                                applications: job.applications.filter((app)=>app.user !== null)
                                             };
                                             setSelectedJob(filteredJob);
                                         },
@@ -1735,7 +1415,7 @@ function JobsList() {
                                         children: "Delete"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/adminDashBoard/jobList.tsx",
-                                        lineNumber: 103,
+                                        lineNumber: 101,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -1748,7 +1428,7 @@ function JobsList() {
                                 className: "absolute inset-0 rounded-2xl ring-2 ring-transparent group-hover:ring-blue-200 group-focus:ring-blue-300 transition-all duration-300 pointer-events-none"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/adminDashBoard/jobList.tsx",
-                                lineNumber: 114,
+                                lineNumber: 112,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -1768,12 +1448,12 @@ function JobsList() {
                     onClose: ()=>setShowForm(false)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/adminDashBoard/jobList.tsx",
-                    lineNumber: 122,
+                    lineNumber: 120,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/adminDashBoard/jobList.tsx",
-                lineNumber: 121,
+                lineNumber: 119,
                 columnNumber: 9
             }, this),
             selectedJob && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$adminDashBoard$2f$applicationModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1781,7 +1461,7 @@ function JobsList() {
                 onClose: ()=>setSelectedJob(null)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/adminDashBoard/jobList.tsx",
-                lineNumber: 128,
+                lineNumber: 126,
                 columnNumber: 9
             }, this)
         ]
@@ -2208,4 +1888,4 @@ function DashboardPage() {
 }),
 ];
 
-//# sourceMappingURL=src_app_586f2c9e._.js.map
+//# sourceMappingURL=src_app_9df72c5c._.js.map

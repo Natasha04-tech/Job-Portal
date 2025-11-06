@@ -16,7 +16,7 @@ export const applyJob = async (req: AuthRequest, res: Response) => {
 
   const existing = await JobApplication.findOne({ userId: user._id, jobId });
   if (existing) return res.status(400).json({ message: 'Already applied to this job' });
-
+     
   const application = await JobApplication.create({ userId: user._id, jobId });
   await Job.findByIdAndUpdate(jobId, { $push: { applications: application._id } });
   await User.findByIdAndUpdate(user._id, { $push: { appliedJobs: application._id } });

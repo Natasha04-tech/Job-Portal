@@ -5,7 +5,6 @@ import { useDeleteJob, useJobsforAdmin } from "@/app/customHooks/useJobs";
 import { JobWithApplications } from "@/app/utility/props";
 import JobForm from "./JobForm";
 import { useRouter } from "next/navigation";
-import ApplicationTable from "./ApplicationTable";
 import { X, MapPin, Building2, PlusCircle } from "lucide-react";
 import ApplicantsModal from "./applicationModal";
 
@@ -88,7 +87,14 @@ export default function JobsList() {
               <button
                 onClick={(e) => {
                   e.stopPropagation();
-                  setSelectedJob(job);
+                  // Filter out deleted users before opening modal
+                  const filteredJob = {
+                    ...job,
+                    applications: job.applications.filter(
+                      (app) => app.userId !== null
+                    ),
+                  };
+                  setSelectedJob(filteredJob);
                 }}
                 className="text-sm bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 hover:shadow-md transition-all active:scale-95"
               >
@@ -119,9 +125,8 @@ export default function JobsList() {
 
       {/* Applicants Modal */}
       {selectedJob && (
-  <ApplicantsModal job={selectedJob} onClose={() => setSelectedJob(null)} />
-)}
-
+        <ApplicantsModal job={selectedJob} onClose={() => setSelectedJob(null)} />
+      )}
     </div>
   );
 }
